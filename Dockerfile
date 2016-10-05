@@ -15,6 +15,7 @@ run        DEBIAN_FRONTEND=noninteractive  apt-get upgrade -y
 run	   DEBIAN_FRONTEND=noninteractive  apt-get -y install xserver-xspice x11-xserver-utils
 run        DEBIAN_FRONTEND=noninteractive  apt-get update && apt-get -y --no-install-recommends install xfce4
 run        DEBIAN_FRONTEND=noninteractive  apt-get update && apt-get -y --no-install-recommends install tango-icon-theme xfce4-notifyd xfce4-terminal xfce4-artwork xubuntu-icon-theme
+run        DEBIAN_FRONTEND=noninteractive  apt-get update && apt-get -y --no-install-recommends install firefox
 ADD	   spiceqxl.xorg.conf /etc/X11/	   
 ADD	   resolution.desktop /etc/xdg/autostart/
 ADD	   keyboard.desktop /etc/xdg/autostart/
